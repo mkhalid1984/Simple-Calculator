@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    
+  /* Body Styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ff5349; 
+    font-family: Arial, sans-serif;
+  }
+
+  #title{
+    color: #a3a3a3;
+    text-align: center;
+    padding-bottom: 5px;
+    
+  }
+
+  .name1{
+    color: #fff;
+    
+  }
+ 
+  /* Calculator Container */
+  .calculator {
+    background: #1e1e1e;  /* Dark background for the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  /* Display Screen */
+  #display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #2c2c2c;
+    color: #fff;
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Buttons */
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* General Button Style */
+  button {
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #2c2c2c;
+    color: #fff;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #3c3c3c;
+  }
+  
+  /* Operator Buttons */
+  .operator {
+    background: #ff9f43; /* Orange-ish color for operators */
+  }
+  
+  .operator:hover {
+    background: #ffb66c;
+  }
+  
+  /* Function Buttons (AC, DEL, etc.) */
+  .function-btn {
+    background: #a3a3a3;
+    color: #000;
+  }
+  
+  .function-btn:hover {
+    background: #bbb;
+  }
+  
+  /* Zero Button spanning two columns */
+  .zero {
+    grid-column: span 2;
+  }
+  
+  /* Equals Button (highlighted) */
+  .equal {
+    background: #f50057; /* Pinkish/Red color for equals */
+  }
+  
+  .equal:hover {
+    background: #ff3b7c;
+  }
+  
